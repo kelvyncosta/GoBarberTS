@@ -30,10 +30,12 @@
         "ts": "never"
       }
     ],
+    "camelcase": "off",
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": [
       "error"
-    ]
+    ],
+    "class-methods-use-this": "off"
   },
   "settings": {
     "import/resolver": {
