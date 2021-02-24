@@ -35,6 +35,9 @@
     "@typescript-eslint/no-use-before-define": [
       "error"
     ],
+    "@typescript-eslint/no-unused-vars": ["error", {
+      "argsIgnorePattern": "_"
+    }],
     "class-methods-use-this": "off"
   },
   "settings": {
