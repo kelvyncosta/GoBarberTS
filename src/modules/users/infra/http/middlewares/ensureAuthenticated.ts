@@ -19,7 +19,9 @@ export default function ensureAuthenticated(
   // Validação do token JWT
   const authHeader = request.headers.authorization;
 
-  if (!authHeader) throw new AppError('JWT token is missing', 403);
+  if (!authHeader) {
+    throw new AppError('JWT token is missing', 403);
+  }
 
   const [, token] = authHeader.split(' ');
 
